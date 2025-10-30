@@ -1,7 +1,64 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\IngSoftware_Codex\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\models\\computers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\models\\computers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\models\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\models\\favorites.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\models\\typeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\models\\typeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\migrations\\20251030022922_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\migrations\\20251030022922_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\controllers\\recommendationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\controllers\\recommendationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\controllers\\favoritescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|c:\\users\\lenovo\\documents\\ingsoftware_codex\\ingsoftware_codex\\codex\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1083D55A-56E9-4CD4-BFE6-D1CEE169FEC2}|Codex\\Codex.csproj|solutionrelative:codex\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +66,193 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20251030022922_Inicial.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Migrations\\20251030022922_Inicial.cs",
+              "RelativeDocumentMoniker": "Codex\\Migrations\\20251030022922_Inicial.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Migrations\\20251030022922_Inicial.cs",
+              "RelativeToolTip": "Codex\\Migrations\\20251030022922_Inicial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T02:29:22.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TypeUser.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Models\\TypeUser.cs",
+              "RelativeDocumentMoniker": "Codex\\Models\\TypeUser.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Models\\TypeUser.cs",
+              "RelativeToolTip": "Codex\\Models\\TypeUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T02:12:05.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Codex\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Codex\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T02:08:22.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Program.cs",
+              "RelativeDocumentMoniker": "Codex\\Program.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Program.cs",
+              "RelativeToolTip": "Codex\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T01:56:54.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\appsettings.json",
+              "RelativeDocumentMoniker": "Codex\\appsettings.json",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\appsettings.json",
+              "RelativeToolTip": "Codex\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-30T01:37:55.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Favorites.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Models\\Favorites.cs",
+              "RelativeDocumentMoniker": "Codex\\Models\\Favorites.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Models\\Favorites.cs",
+              "RelativeToolTip": "Codex\\Models\\Favorites.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T01:30:04.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Computers.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Models\\Computers.cs",
+              "RelativeDocumentMoniker": "Codex\\Models\\Computers.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Models\\Computers.cs",
+              "RelativeToolTip": "Codex\\Models\\Computers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T01:29:45.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Codex\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Models\\Users.cs",
+              "RelativeToolTip": "Codex\\Models\\Users.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T01:29:26.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "Codex\\Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\TestController.cs",
+              "RelativeToolTip": "Codex\\Controllers\\TestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T02:32:07.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Codex\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Codex\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T01:25:19.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FavoritesController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\FavoritesController.cs",
+              "RelativeDocumentMoniker": "Codex\\Controllers\\FavoritesController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\FavoritesController.cs",
+              "RelativeToolTip": "Codex\\Controllers\\FavoritesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T01:24:14.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RecommendationController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\RecommendationController.cs",
+              "RelativeDocumentMoniker": "Codex\\Controllers\\RecommendationController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\RecommendationController.cs",
+              "RelativeToolTip": "Codex\\Controllers\\RecommendationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T01:08:44.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Codex\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Codex\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T01:08:39.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Codex\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Codex\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T01:07:01.502Z",
+              "EditorCaption": ""
             }
           ]
         }
