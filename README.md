@@ -28,7 +28,9 @@ XAMPP
 Abre la Consola del Administrador de Paquetes (Package Manager Console) en Visual Studio y ejecuta los siguientes comandos:
 
 Install-Package Microsoft.EntityFrameworkCore
+
 Install-Package Microsoft.EntityFrameworkCore.SqlServer
+
 Install-Package Microsoft.EntityFrameworkCore.Tools
 
 
