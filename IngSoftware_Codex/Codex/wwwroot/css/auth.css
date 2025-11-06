@@ -1,0 +1,438 @@
+﻿@font-face {
+    font-family: "Coolvetica";
+    src: url("../Fuente/Coolvetica Rg.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Lined";
+    src: url("../Fuente/Lined.ttf");
+    font-display: swap;
+}
+
+/* ====== RESETEO GENERAL ====== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lined";
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    background-color: #F5F5F5;
+}
+
+/* ====== CONTENEDOR PRINCIPAL ====== */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container {
+    display: grid;
+    grid-template-columns: 4.1fr 5fr 0.9fr;
+    width: 57.25rem;
+    height: 31rem;
+}
+
+.auth-wrapper {
+    background-color: #ffffff;
+    padding: 10px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.09), 0 8px 10px rgba(0, 0, 0, 0.10);
+}
+
+/* ====== FORMULARIOS ====== */
+.forms {
+    transition: transform 0.7s ease;
+}
+
+    .forms.active {
+        transform: translateY(-50%);
+    }
+
+.auth-wrapper form {
+    font-family: "Lined";
+    padding: 2rem;
+}
+
+#login-form {
+    padding-top: 5rem;
+}
+
+#register-form
+{
+    padding-top: 3.5rem;
+}
+form h2 {
+    font-family: "Coolvetica";
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #0E021F;
+}
+
+form p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+}
+
+    form p a {
+        font-weight: 700;
+        color: #0E021F;
+        text-decoration: none;
+    }
+
+        form p a:hover {
+            color: #2f184f;
+        }
+
+/* ====== CAMPOS DE ENTRADA ====== */
+label {
+    font-family: "Coolvetica";
+    font-size: 19px;
+    display: block;
+    margin-bottom: 5px;
+    color: #0E021F;
+}
+
+.auth-input {
+    font-size: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+    border-bottom: 1px solid #d6d6d6;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+    .auth-input:focus-within {
+        border-color: #0E021F;
+    }
+
+    .auth-input input {
+        font-size: 18px;
+        border: none;
+        outline: none;
+        width: 100%;
+        background-color: inherit;
+        color: #333333;
+    }
+
+    .auth-input img {
+        height: 22px;
+        width: auto;
+    }
+
+input::placeholder {
+    color: #bbbbbb;
+}
+
+/* ====== BOTÓN ====== */
+.button {
+    font-family: "Coolvetica";
+    color: #ffffff;
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #0E021F;
+    transition: all 0.3s ease;
+}
+
+    .button:hover {
+        background-color: #120a1f;
+        transform: scale(1.05);
+    }
+
+/* ====== MENSAJES (ViewBag.Error / ViewBag.Message) ====== */
+.message {
+    font-family: "Coolvetica";
+    font-size: 15px;
+    text-align: center;
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    animation: fadeIn 0.6s ease;
+}
+
+    .message.error {
+        background-color: rgba(255, 0, 0, 0.1);
+        color: #b00020;
+        border: 1px solid #b00020;
+    }
+
+    .message.success {
+        background-color: rgba(0, 200, 83, 0.1);
+        color: #007E33;
+        border: 1px solid #007E33;
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ====== BANNER ====== */
+.auth-banner {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.09), 0 8px 10px rgba(0, 0, 0, 0.10);
+    border-radius: 20px;
+    color: #ffffff;
+    height: 115%;
+    padding: 2rem;
+    background-color: #0E021F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+    .auth-banner h2 {
+        font-family: "Coolvetica";
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .auth-banner img {
+        height: 130px;
+        margin: 15px 0 25px 0;
+        transition: transform 0.5s ease;
+        cursor: pointer;
+    }
+
+        .auth-banner img:hover {
+            transform: scale(1.05);
+        }
+
+    .auth-banner p {
+        font-size: 18px;
+    }
+
+/* ====== SIDEBAR ====== */
+.auth-sidebar {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    user-select: none;
+}
+
+    .auth-sidebar::after {
+        content: '';
+        background-color: #0E021F;
+        height: 50%;
+        width: 0.2rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: top 0.7s ease-in-out;
+    }
+
+    .auth-sidebar.active::after {
+        top: 50%;
+    }
+
+    .auth-sidebar .sign {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+        .auth-sidebar .sign:hover {
+            transform: scale(1.05);
+        }
+
+    .auth-sidebar img {
+        width: 2rem;
+    }
+
+    .auth-sidebar span {
+        color: #0E021F;
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+/* ====== RESPONSIVE ====== */
+@media screen and (max-width: 1150px) {
+    .auth-container {
+        grid-template-columns: 65% 10%;
+        width: 100vw;
+        max-width: 100vw;
+        padding: 0;
+    }
+
+    .auth-banner {
+        display: none;
+    }
+
+    .auth-wrapper {
+        width: 100%;
+        padding: 0;
+    }
+
+    #sidebar {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+    }
+
+    .auth-sidebar img {
+        width: 20px;
+    }
+}
+
+#register-form label[for="register-confirm-password"] {
+    margin-top: 5px;
+    
+}
+
+#register-confirm-password {
+    outline: none;
+}
+
+/* ====== SPAM-TOAST (emergente tipo spam) ====== */
+.spam-toast {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    transform-origin: top right;
+    animation: spamDrop 0.45s cubic-bezier(.2,.9,.3,1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* contenedor interno: fondo llamativo pero elegante */
+.spam-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    height: 40px; 
+    width: auto; 
+    padding: 0 20px;
+    background: linear-gradient(90deg, rgba(14,2,31,0.95), rgba(47,24,79,0.95));
+    color: #fff;
+    font-family: "Coolvetica";
+    font-size: 25px;
+    align-items: center;
+}
+
+/* botón cerrar */
+.spam-close {
+    margin-left: auto;
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.92);
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 6px;
+    border-radius: 6px;
+    transition: background 0.18s ease, transform 0.12s ease;
+}
+
+    .spam-close:hover {
+        background: rgba(255,255,255,0.08);
+        transform: scale(1.06);
+    }
+
+/* pulso sutil tipo 'spam' para llamar la atención al inicio */
+.spam-content::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    margin-left: 6px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #ffcc00, #ff3b3b);
+    box-shadow: 0 0 8px rgba(255,60,60,0.28);
+    animation: spamPulse 1.6s infinite ease-in-out;
+}
+
+/* animaciones */
+@keyframes spamDrop {
+    from {
+        opacity: 0;
+        transform: translateY(-18px) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes spamPulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.18);
+        opacity: 0.85;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* ocultar en pantallas muy pequeñas para no tapar todo */
+@media screen and (max-width: 520px) {
+    .spam-toast {
+        top: 12px;
+        right: 12px;
+    }
+
+    .spam-content {
+        font-size: 13px;
+        min-width: 180px;
+    }
+}

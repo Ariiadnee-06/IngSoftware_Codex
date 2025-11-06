@@ -3,9 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ===========================================
-// 🔹 Conexión a MySQL
-// ===========================================
+// Conexión a la BD MySql
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -13,16 +12,17 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     )
 );
 
-// ===========================================
-// 🔹 Controladores y vistas
-// ===========================================
+//  Controladores y vistas
 builder.Services.AddControllersWithViews();
+
+// Login y Register 
+builder.Services.AddSession();
+
 
 var app = builder.Build();
 
-// ===========================================
-// 🔹 Configuración del pipeline
-// ===========================================
+//  Configuración del pipeline
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -34,6 +34,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 app.UseAuthorization();
+app.UseSession();
 
 app.MapControllerRoute(
     name: "default",

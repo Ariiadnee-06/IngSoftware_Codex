@@ -1,0 +1,125 @@
+﻿@{
+    Layout = null;
+}
+
+@if (ViewBag.Message != null)
+{
+    <div id="spam-toast" class="spam-toast">
+        <div class="spam-content">
+            <strong>Usuario Registrado con Éxito</strong>
+            <button id="spam-close" class="spam-close" aria-label="Cerrar">×</button>
+        </div>
+    </div>
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="~/imagenes/Codex-Logo.png" />
+    <link rel="stylesheet" href="~/css/auth.css" />
+    <title>Codex | Inicia sesión</title>
+</head>
+<body>
+
+    <div class="auth-container">
+        <div class="auth-wrapper">
+            <div class="forms" id="forms">
+
+                <!-- FORMULARIO DE LOGIN -->
+                <form id="login-form" asp-controller="Account" asp-action="Login" method="post">
+                    @Html.AntiForgeryToken()
+                    <h2>Inicia Sesión</h2>
+                    <p>
+                        ¿No tienes cuenta con nosotros?
+                        <a href="#" onclick="changeRegister(); return false;"> Regístrate</a>
+                    </p>
+
+                    <label for="username">Usuario</label>
+                    <div class="auth-input">
+                        <img src="~/imagenes/usuario.png" alt="Usuario" />
+                        <input type="text" id="username" name="username" placeholder="Nombre de usuario" required />
+                    </div>
+
+                    <label for="password">Contraseña</label>
+                    <div class="auth-input">
+                        <img src="~/imagenes/cerrar.png" alt="Contraseña" />
+                        <input type="password" id="password" name="password" placeholder="Escriba 5 o más caracteres" minlength="5" required />
+                    </div>
+
+                    @if (ViewBag.Error != null)
+                    {
+                        <div id="login-message" class="message error">@ViewBag.Error</div>
+                    }
+
+                    <button type="submit" class="button">Entrar</button>
+                </form>
+
+
+                <!-- FORMULARIO DE REGISTRO -->
+                <form id="register-form" asp-controller="Account" asp-action="Register" method="post">
+                    @Html.AntiForgeryToken()
+                    <h2>Crear una cuenta</h2>
+                    <p>
+                        ¿Ya tienes cuenta con nosotros?
+                        <a href="#" onclick="changeLogin(); return false;"> Inicia Sesión</a>
+                    </p>
+
+                    <label for="register-username">Usuario</label>
+                    <div class="auth-input">
+                        <img src="~/imagenes/usuario.png" alt="Usuario" />
+                        <input type="text" id="register-username" name="username" placeholder="Nombre de usuario" required />
+                    </div>
+
+                    <label for="register-password">Contraseña</label>
+                    <div class="auth-input">
+                        <img src="~/imagenes/cerrar.png" alt="Contraseña" />
+                        <input type="password" id="register-password" name="password" placeholder="Contraseña" minlength="5" required />
+                    </div>
+
+                    <!-- 🔒 NUEVO: Confirmar contraseña -->
+                    <label for="register-confirm-password">Confirmar contraseña</label>
+                    <div class="auth-input">
+                        <img src="~/imagenes/cerrar.png" alt="Confirmar contraseña" />
+                        <input type="password" id="register-confirm-password" name="confirmPassword" placeholder="Repite tu contraseña" minlength="5" required />
+                    </div>
+
+                    <!-- 💬 Mensajes de estado -->
+                    @if (ViewBag.Message != null)
+                    {
+                        <div id="register-message" class="message success">@ViewBag.Message</div>
+                    }
+                    else if (ViewBag.Error != null)
+                    {
+                        <div id="register-message" class="message error">@ViewBag.Error</div>
+                    }
+
+                    <button type="submit" class="button">Registrarme</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="auth-banner">
+            <section>
+                <h2>Bienvenidos a</h2>
+                <img src="~/imagenes/Logo-Blanco.png" alt="Logo" />
+                <p>Un sistema de recomendación que depende de tus respuestas</p>
+            </section>
+        </div>
+
+        <div class="auth-sidebar" id="sidebar">
+            <div class="sign" id="login-sidebar">
+                <img src="~/imagenes/proximo.png" alt="Iniciar Sesión" />
+                <span>Iniciar Sesión</span>
+            </div>
+            <div class="sign" id="register-sidebar">
+                <img src="~/imagenes/user.png" alt="Registrarme" />
+                <span>Registrarme</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/auth.js"></script>
+</body>
+</html>
