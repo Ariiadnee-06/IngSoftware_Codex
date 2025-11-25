@@ -68,11 +68,11 @@
 
             <h2 class="title">Gestión de Computadores</h2>
 
-            <!-- BUSCADOR -->
+            <!-- BUSCADOR Y AGREGAR COMPUTADORA-->
             <div class="filter-row" style="display: flex; align-items: center; gap: 10px;">
                 <input type="text" id="searchInput" placeholder="Buscar..." class="input-search" />
+                <button id="create">Agregar Computadora</button>
             </div>
-
 
             <!-- TABLA -->
             <div class="table-container">
@@ -149,11 +149,11 @@
                                 </td>
                             </tr>
                         }
-                    </tbody>
-
+                    </tbody>                   
                 </table>
-            </div>
+                </div>
 
+            </div>
             <!-- MODAL -->
             <div id="confirmModal" class="modal-overlay" style="display:none;">
                 <div class="modal-box">
@@ -167,8 +167,44 @@
             </div>
 
         </div>
-    
-    </div>
+    <!-- MODAL CREAR COMPUTADORA -->
+    <div id="createModal" class="modal-overlay" style="display:none;">
+        <div class="modal-box-create">
+            <h3>Agregar Computadora</h3>
+
+            <!-- FORMULARIO QUE ENVÍA AL CONTROLADOR -->
+            <form asp-action="Create" asp-controller="ProviderAdmin" method="post">
+
+                <div class="modal-content">
+
+                    <label for="Brand">Marca</label>
+                    <input type="text" name="Brand" class="cell-input" id="Brand" />
+
+                    <label for="Model">Modelo</label>
+                    <input type="text" name="Model" class="cell-input" id="Model" />
+
+                    <label for="Processor">Procesador</label>
+                    <input type="text" name="Processor" class="cell-input" id="Processor" />
+
+                    <label for="Memory">Memoria</label>
+                    <input type="text" name="Memory" class="cell-input" id="Memory" />
+
+                    <label for="Storage">Almacenamiento</label>
+                    <input type="text" name="Storage" class="cell-input" id="Storage" />
+
+                    <label for="Price">Precio</label>
+                    <input type="text" name="Price" class="cell-input" id="Price" />
+
+                </div>
+
+                <div class="modal-buttons">
+                    <button type="button" id="btnCancelCreate" class="modal-btn cancel">Cancelar</button>
+                    <button type="submit" id="btnSaveCreate" class="modal-btn accept">Guardar</button>
+                </div>
+
+            </form>
+
+        </div>
 
     <footer class="footer">
         <p>&copy; 2025 Codex | Panel de administración</p>

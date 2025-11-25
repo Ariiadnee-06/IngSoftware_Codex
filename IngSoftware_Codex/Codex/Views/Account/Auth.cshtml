@@ -2,11 +2,12 @@
     Layout = null;
 }
 
-@if (ViewBag.Message != null)
+<!-- TOAST DE REGISTRO O LOGIN -->
+@if (TempData["Success"] != null)
 {
     <div id="spam-toast" class="spam-toast">
         <div class="spam-content">
-            <strong>Usuario Registrado con Éxito</strong>
+            <strong>@TempData["Success"]</strong>
             <button id="spam-close" class="spam-close" aria-label="Cerrar">×</button>
         </div>
     </div>
@@ -31,6 +32,7 @@
                 <form id="login-form" asp-controller="Account" asp-action="Login" method="post">
                     @Html.AntiForgeryToken()
                     <h2>Inicia Sesión</h2>
+
                     <p>
                         ¿No tienes cuenta con nosotros?
                         <a href="#" onclick="changeRegister(); return false;"> Regístrate</a>
@@ -48,9 +50,10 @@
                         <input type="password" id="password" name="password" placeholder="Escriba 5 o más caracteres" minlength="5" required />
                     </div>
 
-                    @if (ViewBag.Error != null)
+                    <!-- MENSAJE ERROR LOGIN -->
+                    @if (TempData["Error"] != null)
                     {
-                        <div id="login-message" class="message error">@ViewBag.Error</div>
+                        <div id="login-message" class="message error">@TempData["Error"]</div>
                     }
 
                     <button type="submit" class="button">Entrar</button>
@@ -61,6 +64,7 @@
                 <form id="register-form" asp-controller="Account" asp-action="Register" method="post">
                     @Html.AntiForgeryToken()
                     <h2>Crear una cuenta</h2>
+
                     <p>
                         ¿Ya tienes cuenta con nosotros?
                         <a href="#" onclick="changeLogin(); return false;"> Inicia Sesión</a>
@@ -78,21 +82,20 @@
                         <input type="password" id="register-password" name="password" placeholder="Contraseña" minlength="5" required />
                     </div>
 
-                    <!-- 🔒 NUEVO: Confirmar contraseña -->
                     <label for="register-confirm-password">Confirmar contraseña</label>
                     <div class="auth-input">
                         <img src="~/imagenes/cerrar.png" alt="Confirmar contraseña" />
                         <input type="password" id="register-confirm-password" name="confirmPassword" placeholder="Repite tu contraseña" minlength="5" required />
                     </div>
 
-                    <!-- 💬 Mensajes de estado -->
-                    @if (ViewBag.Message != null)
+                    <!-- MENSAJES DE REGISTRO -->
+                    @if (TempData["Success"] != null)
                     {
-                        <div id="register-message" class="message success">@ViewBag.Message</div>
+                        <div id="register-message" class="message success">@TempData["Success"]</div>
                     }
-                    else if (ViewBag.Error != null)
+                    else if (TempData["Error"] != null)
                     {
-                        <div id="register-message" class="message error">@ViewBag.Error</div>
+                        <div id="register-message" class="message error">@TempData["Error"]</div>
                     }
 
                     <button type="submit" class="button">Registrarme</button>

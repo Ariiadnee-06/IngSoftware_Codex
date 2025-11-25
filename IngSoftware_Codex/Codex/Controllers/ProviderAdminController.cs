@@ -82,16 +82,33 @@ namespace Codex.Controllers
             return RedirectToAction("ProviderAdmin");
         }
 
-        // ====== CREAR ======
         [HttpPost]
         public IActionResult Create(Computers newComp)
         {
-            if (!ModelState.IsValid)
+            // Convertir price manualmente para evitar errores de cultura
+            string priceString = Request.Form["Price"];
+
+            if (!decimal.TryParse(priceString, System.Globalization.NumberStyles.Any,
+                                  System.Globalization.CultureInfo.InvariantCulture, out decimal price))
+            {
+                TempData["Error"] = "El precio no es válido.";
+                return RedirectToAction("ProviderAdmin");
+            }
+
+            newComp.Price = price;
+
+            // Validar campos obligatorios
+            if (string.IsNullOrWhiteSpace(newComp.Brand) ||
+                string.IsNullOrWhiteSpace(newComp.Model) ||
+                string.IsNullOrWhiteSpace(newComp.Processor) ||
+                string.IsNullOrWhiteSpace(newComp.Memory) ||
+                string.IsNullOrWhiteSpace(newComp.Storage))
             {
                 TempData["Error"] = "Todos los campos son obligatorios.";
                 return RedirectToAction("ProviderAdmin");
             }
 
+            // Guardar en BD
             _context.Computers.Add(newComp);
             _context.SaveChanges();
 

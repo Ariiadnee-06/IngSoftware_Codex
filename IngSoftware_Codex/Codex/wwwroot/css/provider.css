@@ -116,19 +116,20 @@ body {
     color: #1a1a1a;
 }
 
-
 .filter-row {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
     gap: 15px;
     padding: 20px;
-    align-items: center;
     margin-bottom: 20px;
     border-top: #e3e3e3 0.5px solid;
-    width: 500px;
 }
 
 .input-search {
     flex: 1;
+    max-width: 300px;
     font-size: 18px;
     font-family: 'Lined';
     padding: 10px;
@@ -136,6 +137,7 @@ body {
     border: 1px solid #ccc;
     outline: none;
 }
+
 
 .btn-search,
 .filter-btn {
@@ -360,4 +362,112 @@ body {
         transform: translateY(-10px);
     }
 }
+
+#create {
+    padding: 10px;
+    font-size: 15px;
+    width: auto;
+    background: #11001F;
+    color: white;
+    font-family: 'Coolvetica';
+    border-radius: 20px;
+    transition: 0.5s ease-in-out 0.1s;
+    cursor: pointer;
+}
+
+    #create:hover {
+        background: #240042;
+        color: white;
+        transform: scale(1.05);
+    }
  
+/*------------------Modal de Agregar computadora----------------*/
+.modal-box-create {
+    background: #fff;
+    padding: 30px;
+    width: 500px;
+    border-radius: 20px;
+    animation: show .3s ease-in-out;
+    align-items: flex-start;
+    color: #120b22;
+}
+
+    .modal-box-create h3 {
+        font-family: 'Coolvetica';
+        font-size: 25px;
+        padding: 10px;
+        letter-spacing: 0.5px;
+        font-weight: lighter;
+    }
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 20px;
+}
+
+    .modal-content label {
+        font-weight: lighter;
+        font-family: 'Coolvetica';
+        font-size: 18px;
+    }
+
+    .modal-content input {
+        outline: none;
+        border: none;
+        width: 100%;
+        border-bottom: #e3e3e3 1px solid;
+        padding: 10px;
+        font-family: 'Lined';
+        font-size: 17px;
+    }
+
+.modal-btn {
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Coolvetica';
+    font-size: 18px;
+    width: 110px;
+    margin-top: 10px;
+}
+
+.cancel {
+    background: #e3e3e3;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    transition: 0.5s ease-in-out 0.1s;
+}
+
+    .cancel:hover {
+        background: #ccc;
+        transform: scale(1.05);
+    }
+
+.accept {
+    background: #11001F;
+    color: white;
+    transition: 0.5s ease-in-out 0.1s;
+}
+
+    .accept:hover {
+        background: #240042;
+        color: white;
+        transform: scale(1.05);
+    }
+
+@keyframes show {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
