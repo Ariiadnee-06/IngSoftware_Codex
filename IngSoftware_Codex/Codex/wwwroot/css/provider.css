@@ -1,4 +1,4 @@
-/* ------------------ Fuentes ------------------ */
+ï»¿/* ------------------ Fuentes ------------------ */
 @font-face {
     font-family: "Coolvetica";
     src: url("../Fuente/Coolvetica Rg.otf");
@@ -191,7 +191,7 @@ body {
     gap: 10px;
 }
 
-#btn-edit {
+.btn-edit {
     background: #fff;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
     color: #1a1a1a;
@@ -203,7 +203,7 @@ body {
     transition: 0.5s ease-in-out 0.1s;
 }
 
-#btn-delete {
+.btn-delete {
     background: #11001F;
     color: white;
     padding: 8px 18px;
@@ -214,13 +214,13 @@ body {
     transition: 0.5s ease-in-out 0.1s;
 }
 
-    #btn-delete:hover {
+    .btn-delete:hover {
         background: #240042;
         color: white;
         transform: scale(1.05);
     }
 
-#btn-edit:hover {
+.btn-edit:hover {
     background: #f8f8f8;
     color: #11001F;
     transform: scale(1.05);
@@ -235,7 +235,7 @@ body {
     margin-top: 3rem;
 }
 
-/*------------------Modal de Confirmación ----------------------- */
+/*------------------Modal de ConfirmaciÃ³n ----------------------- */
 .modal-overlay {
     box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
     position: fixed;
@@ -313,7 +313,7 @@ body {
     gap: 8px;
 }
 
-/*--------------Mensaje de confirmación-----------*/
+/*--------------Mensaje de confirmaciÃ³n-----------*/
 .alert-success,
 .alert-error {
     position: fixed;
@@ -360,4 +360,4 @@ body {
         transform: translateY(-10px);
     }
 }
-
+ 

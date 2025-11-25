@@ -2,8 +2,6 @@
 using Codex.Models;
 using Codex.Data;
 using System.Linq;
-using Microsoft.AspNetCore.Cryptography.KeyDerivation;
-using System.Security.Cryptography;
 using Microsoft.AspNetCore.Http;
 
 namespace Codex.Controllers
@@ -17,97 +15,89 @@ namespace Codex.Controllers
             _context = context;
         }
 
-        // Vista de login/registro
+        // ====== VISTA PRINCIPAL (LOGIN / REGISTRO) ======
         [HttpGet]
         public IActionResult Auth()
         {
             return View();
         }
 
-        // ===== LOGIN =====
+        // ====== LOGIN ======
         [HttpPost]
         public IActionResult Login(string username, string password)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Username == username);
+            var user = _context.Users
+                .FirstOrDefault(u => u.Username == username && u.Password == password);
 
-            if (user == null || !VerifyPassword(password, user.Password))
+            // VALIDACIÓN DE USUARIO
+            if (user == null)
             {
-                ViewBag.Error = "Usuario o contraseña incorrectos";
-                return View("Auth");
+                TempData["Error"] = "Usuario o contraseña incorrectos.";
+                return RedirectToAction("Auth");
             }
 
+            // GUARDAR SESIÓN
             HttpContext.Session.SetString("Username", user.Username);
-            HttpContext.Session.SetString("Rol", user.Rol);
+            HttpContext.Session.SetInt32("IdType", user.IdType);
 
-            return RedirectToAction("Index", "Home");
+            TempData["Success"] = $"Bienvenido {user.Username}!";
+
+            // REDIRECCIÓN SEGÚN IdType
+            if (user.IdType == 1)
+                return RedirectToAction("Index", "Home");
+
+            if (user.IdType == 2)
+                return RedirectToAction("Admin", "UserAdmin"); // ADMIN
+
+            if (user.IdType == 3)
+                return RedirectToAction("ProviderAdmin", "ProviderAdmin"); // PROVIDER
+
+            TempData["Error"] = "Tipo de usuario no reconocido.";
+            return RedirectToAction("Auth");
         }
 
-        // ===== REGISTER =====
+        // ====== REGISTRO ======
         [HttpPost]
         public IActionResult Register(string username, string password, string confirmPassword)
         {
-            if (_context.Users.Any(u => u.Username == username))
+            if (string.IsNullOrWhiteSpace(username) ||
+                string.IsNullOrWhiteSpace(password))
             {
-                ViewBag.Error = "El usuario ya existe";
-                return View("Auth");
+                TempData["Error"] = "Completa todos los campos.";
+                return RedirectToAction("Auth");
             }
 
             if (password != confirmPassword)
             {
-                ViewBag.Error = "Las contraseñas no coinciden";
-                return View("Auth");
+                TempData["Error"] = "Las contraseñas no coinciden.";
+                return RedirectToAction("Auth");
             }
 
-            var hashedPassword = HashPassword(password);
+            if (_context.Users.Any(u => u.Username == username))
+            {
+                TempData["Error"] = "El usuario ya existe.";
+                return RedirectToAction("Auth");
+            }
 
             var newUser = new User
             {
                 Username = username,
-                Password = hashedPassword,
-                Rol = "Usuario",
+                Password = password,
                 IdType = 1
             };
 
             _context.Users.Add(newUser);
             _context.SaveChanges();
 
-            ViewBag.Message = "Registrado con éxito. Ahora puedes iniciar sesión.";
-            return View("Auth");
+            TempData["Success"] = "Registrado con éxito. Ahora puedes iniciar sesión.";
+            return RedirectToAction("Auth");
         }
 
-        // ===== Métodos auxiliares =====
-        private string HashPassword(string password)
+        // ====== LOGOUT ======
+        public IActionResult Logout()
         {
-            byte[] salt = new byte[128 / 8];
-            using (var rng = RandomNumberGenerator.Create())
-            {
-                rng.GetBytes(salt);
-            }
-
-            string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
-                password: password,
-                salt: salt,
-                prf: KeyDerivationPrf.HMACSHA256,
-                iterationCount: 10000,
-                numBytesRequested: 256 / 8));
-
-            return $"{Convert.ToBase64String(salt)}.{hashed}";
-        }
-
-        private bool VerifyPassword(string enteredPassword, string storedPassword)
-        {
-            var parts = storedPassword.Split('.');
-            if (parts.Length != 2) return false;
-
-            byte[] salt = Convert.FromBase64String(parts[0]);
-            string hashedEntered = Convert.ToBase64String(KeyDerivation.Pbkdf2(
-                password: enteredPassword,
-                salt: salt,
-                prf: KeyDerivationPrf.HMACSHA256,
-                iterationCount: 10000,
-                numBytesRequested: 256 / 8));
-
-            return hashedEntered == parts[1];
+            HttpContext.Session.Clear();
+            return RedirectToAction("Auth");
         }
     }
 }

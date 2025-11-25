@@ -21,11 +21,6 @@ namespace Codex.Models
         [StringLength(200)]
         public string Password { get; set; }
 
-        [Required]
-        [Column("Rol")]
-        [StringLength(50)]
-        public string Rol { get; set; }
-
         [ForeignKey("TypeUser")]
         [Column("IdType")]
         public int IdType { get; set; }
@@ -33,5 +28,6 @@ namespace Codex.Models
         // Relaciones
         public TypeUser TypeUser { get; set; }
         public ICollection<Favorite> Favorites { get; set; }
+
     }
 }

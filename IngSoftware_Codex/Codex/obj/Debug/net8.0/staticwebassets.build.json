@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Y+xd9OUvxIRFghb0Kc+49o+Ns3IjZJxs+c6KjAj5RR8=",
+  "Hash": "Vo3B660+8RS86PuI5nDRxL/XFEnwDSAOIwwY4ZbbGI8=",
   "Source": "Codex",
   "BasePath": "_content/Codex",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\favoritos.css"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\wwwroot\\css\\provider.css",
+      "SourceId": "Codex",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\wwwroot\\",
+      "BasePath": "_content/Codex",
+      "RelativePath": "css/provider.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\provider.css"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\wwwroot\\css\\site.css",
@@ -680,6 +699,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
+    },
+    {
+      "Identity": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\wwwroot\\js\\provider.js",
+      "SourceId": "Codex",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\wwwroot\\",
+      "BasePath": "_content/Codex",
+      "RelativePath": "js/provider.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\provider.js"
     },
     {
       "Identity": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\wwwroot\\js\\site.js",

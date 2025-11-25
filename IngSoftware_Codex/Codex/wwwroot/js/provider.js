@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+﻿document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM cargado, inicializando modal...");  // Log para verificar
 
     let formToSubmit = null;
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         rows.forEach(row => {
             // Selecciona SOLO la celda del username
-            const usernameCell = row.querySelector('input[name="Username"]');
+            const usernameCell = row.querySelector('input[name="Brand"]');
 
             if (usernameCell) {
                 const username = usernameCell.value.toLowerCase();

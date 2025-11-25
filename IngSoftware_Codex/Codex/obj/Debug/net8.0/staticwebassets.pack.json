@@ -113,6 +113,10 @@
       "PackagePath": "staticwebassets\\css\\favoritos.css"
     },
     {
+      "Id": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\wwwroot\\css\\provider.css",
+      "PackagePath": "staticwebassets\\css\\provider.css"
+    },
+    {
       "Id": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -135,6 +139,10 @@
     {
       "Id": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\wwwroot\\js\\provider.js",
+      "PackagePath": "staticwebassets\\js\\provider.js"
     },
     {
       "Id": "C:\\Users\\LENOVO\\Documents\\IngSoftware_Codex\\IngSoftware_Codex\\Codex\\wwwroot\\js\\site.js",
